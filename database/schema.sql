@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS certificates (
+id SERIAL PRIMARY KEY,
+certificate_id VARCHAR(100) UNIQUE NOT NULL,
+holder_name VARCHAR(255) NOT NULL,
+commodity VARCHAR(100) NOT NULL,
+purity VARCHAR(100),
+weight VARCHAR(100),
+origin VARCHAR(255),
+issue_date DATE NOT NULL,
+status VARCHAR(50) DEFAULT 'Verified',
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
