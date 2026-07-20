@@ -55,7 +55,7 @@ function Dashboard() {
     const loadCertificates = async () => {
         try {
             const response = await fetch(
-                "http://localhost:5000/api/admin/certificates",
+                "https://zina-commodities-api.onrender.com/api/admin/certificates",
                 {
                     headers: {
                         Authorization:
@@ -124,7 +124,7 @@ function Dashboard() {
         try {
             const response =
                 await fetch(
-                    "http://localhost:5000/api/admin/certificates",
+                    "https://zina-commodities-api.onrender.com/api/admin/certificates",
                     {
                         method: "POST",
 

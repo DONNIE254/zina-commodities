@@ -34,7 +34,7 @@ function Certificate() {
             setCertificate(null);
 
             const response = await fetch(
-                "http://localhost:5000/api/certificates/" +
+                "https://zina-commodities-api.onrender.com/api/certificates/" +
                     cleanId
             );
 
@@ -410,7 +410,7 @@ function Certificate() {
                                 >
                                     <img
                                         src={
-                                            "http://localhost:5000/api/certificates/" +
+                                            "https://zina-commodities-api.onrender.com/api/certificates/" +
                                             certificate.certificate_id +
                                             "/qr"
                                         }
@@ -428,7 +428,7 @@ function Certificate() {
 
                                 <a
                                     href={
-                                        "http://localhost:5000/api/certificates/" +
+                                        "https://zina-commodities-api.onrender.com/api/certificates/" +
                                         certificate.certificate_id +
                                         "/qr"
                                     }
